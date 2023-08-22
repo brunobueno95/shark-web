@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+  background-image: url("/images/ocean-modified.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+ 
+  
+}

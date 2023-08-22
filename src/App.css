@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  background-image: url("/images/ocean.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track color (the area behind the scrollbar thumb) */
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+/* Thumb color (the draggable part of the scrollbar) */
+::-webkit-scrollbar-thumb {
+  background: rgb(63, 63, 63);
+  border-radius: 5px;
+}
+
+/* Change cursor on hover over scrollbar */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(121, 121, 121);
+}

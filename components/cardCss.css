@@ -1,4 +1,5 @@
 .sharkCard {
+  cursor: pointer;
   position: relative;
   height: 130px;
   width: 250px;

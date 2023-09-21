@@ -16,7 +16,7 @@ body {
 
 /* Track color (the area behind the scrollbar thumb) */
 ::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(160, 160, 160, 0.1);
 }
 
 /* Thumb color (the draggable part of the scrollbar) */

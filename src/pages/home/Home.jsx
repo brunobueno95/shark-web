@@ -1,26 +1,26 @@
+import "./Home.css";
 import { useState, useEffect } from "react";
-import axios from 'axios'
-import { CgSearch } from "react-icons/cg";
-
-import "../App.css";
+import axios from "axios";
+// import { CgSearch } from "react-icons/cg";
+import { Link } from "react-router-dom";
 import ContainerCards from "../../components/ContainerCards";
 import Card from "../../components/Card";
 import Pagination from "../../components/Pagination";
-
+import SharkAnimation from "../../components/SharkAnimation";
 function Home() {
   const [currentPage, setCurrentPage] = useState(1);
   const [sharks, setSharks] = useState([]);
-  
+
   useEffect(() => {
     fetchSharks();
   }, []);
 
   const fetchSharks = async () => {
     try {
-      const response = await axios.get('http://localhost:8080/sharks');
+      const response = await axios.get("http://localhost:8080/sharks");
       setSharks(response.data);
     } catch (error) {
-      console.error('Error fetching sharks:', error);
+      console.error("Error fetching sharks:", error);
     }
   };
 
@@ -36,11 +36,19 @@ function Home() {
   };
 
   return (
-    <div style={{ width: "100vw", }}>
+    <div style={{ width: "100vw" }}>
+      <Link to={"/adminLog"}>
+        {" "}
+        <div className="adminLog">
+          <p style={{ margin: "0" }}>Login as</p>
+          <p style={{ margin: "0 auto" }}>admin</p>
+        </div>
+      </Link>
+
       <div
         style={{
           margin: "0 auto",
-          padding:"0px 20px",
+          padding: "0px 20px",
           width: "55%",
           minHeight: "100vh",
           backgroundColor: "rgba(0, 0, 0, 0.616)",
@@ -52,27 +60,35 @@ function Home() {
         }}
       >
         <h1
-          style={{ color: "whitesmoke", fontSize: "55px", marginTop: "10px" }}
+          style={{
+            color: "whitesmoke",
+            fontSize: "65px",
+            marginTop: "10px",
+            marginBottom: "0",
+          }}
         >
           SHARKWEB
         </h1>
-        <p
+        <SharkAnimation />
+        {/* <p
           style={{
             color: "#dfdfdf",
             fontSize: "18px",
             fontWeight: "normal",
             fontFamily: "sans-serif",
+            marginBottom: "0px",
           }}
         >
           A Web Application Showcasing a Comprehensive Collection of Global
           Shark Species and Their Relevant Information
-        </p>
-        <div
+        </p> */}
+
+        {/* <div
           style={{
             display: "flex",
             flexDirection: "row",
             gap: "5px",
-            marginTop: "40px",
+            marginTop: "20px",
           }}
         >
           {" "}
@@ -90,8 +106,8 @@ function Home() {
               backgroundColor: "#cfcfcf",
             }}
           />{" "}
-          <CgSearch style={{ color: "#cfcfcf", fontSize: "30px" }} />
-        </div>
+          <CgSearch style={{ color: " whitesmoke", fontSize: "30px" }} />
+        </div> */}
 
         <div
           style={{
@@ -109,7 +125,9 @@ function Home() {
               overflowY: "auto",
               padding: "auto",
               overflowX: "hidden",
-              backgroundColor: "rgba(0, 0, 0, 0.216)",
+              backgroundColor: " rgb(34, 176, 186, 0.08)",
+              borderRadius: "10px",
+              display: "flex",
             }}
           >
             <ContainerCards>
@@ -119,6 +137,7 @@ function Home() {
                   id={shark._id}
                   commonName={shark.commonName}
                   specie={shark.specie}
+                  image={shark.image}
                 />
               ))}
             </ContainerCards>

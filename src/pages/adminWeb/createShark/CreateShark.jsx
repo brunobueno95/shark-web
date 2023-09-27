@@ -110,7 +110,7 @@ const CreateShark = () => {
     <>
       <div
         style={{
-          height: "50px",
+          height: "20px",
           width: "100vw",
           backgroundColor: "rgba(0, 0, 0, 0.516)",
           display: "flex",
@@ -121,6 +121,8 @@ const CreateShark = () => {
           padding: "20px",
           justifyContent: "flex-end",
           marginRight: "20px",
+          alignItems:"center"
+          
         }}
       >
         {" "}
@@ -149,11 +151,11 @@ const CreateShark = () => {
           alignItems: "center",
         }}
       >
-        <div style={{ height: "20%", width: "20%" }}>
+        <div style={{ height: "30%", width: "35%", marginBottom:"20px" }}>
           <label htmlFor="file-input">
             <div
               style={{
-                backgroundColor: "rgb(34, 176, 186, 0.5)",
+                backgroundColor: !previewSource ? "rgb(34, 176, 186, 0.5)" :"rgb(34, 176, 186, 0.2)" ,
                 height: "100%",
                 width: "100%",
                 borderRadius: "10px",
@@ -164,8 +166,28 @@ const CreateShark = () => {
                 cursor: "pointer",
               }}
             >
+              {" "}
+              {previewSource && (
+                <img
+                  src={previewSource}
+                  alt="chosen"
+                  style={{
+                    height: "100%",
+                    width: "100%",
+                    zIndex: "-1",
+                    position: "relative",
+                    marginBottom: "",
+                    borderRadius:"10px"
+                  }}
+                />
+              )}
               <AiOutlineFileAdd
-                style={{ color: "whitesmoke", fontSize: "60px" }}
+                style={{
+                  color: "whitesmoke",
+                  fontSize: "80px",
+                  zIndex: "99999",
+                  position:"absolute"
+                }}
               />{" "}
             </div>
           </label>
@@ -177,13 +199,6 @@ const CreateShark = () => {
             onChange={handleFileInputChange} // Hide the input element
           />
         </div>
-        {previewSource && (
-          <img
-            src={previewSource}
-            alt="chosen"
-            style={{ height: "300px", width: "300px" }}
-          />
-        )}
 
         <div
           style={{

@@ -70,6 +70,7 @@ const AdminHome = () => {
             padding: "20px",
             justifyContent: "flex-end",
             marginRight: "20px",
+            
           }}
         >
           {" "}

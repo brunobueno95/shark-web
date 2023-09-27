@@ -321,7 +321,7 @@ const EditShark = () => {
                       justifyContent: "flex-end",
                     }}
                   >
-                    <h2 style={{ fontSize: "30px", color: "whitesmoke" }}>
+                    <h2 style={{ fontSize: "25px", color: "whitesmoke" }}>
                       Name:
                     </h2>
                   </div>
@@ -337,7 +337,7 @@ const EditShark = () => {
                   >
                     <h2
                       style={{
-                        fontSize: "25px",
+                        fontSize: "20px",
                         color: "whitesmoke",
                         fontWeight: "normal",
                       }}
@@ -379,7 +379,7 @@ const EditShark = () => {
                       justifyContent: "flex-end",
                     }}
                   >
-                    <h2 style={{ fontSize: "30px", color: "whitesmoke" }}>
+                    <h2 style={{ fontSize: "25px", color: "whitesmoke" }}>
                       Specie:
                     </h2>
                   </div>
@@ -395,7 +395,7 @@ const EditShark = () => {
                   >
                     <h2
                       style={{
-                        fontSize: "25px",
+                        fontSize: "20px",
                         color: "whitesmoke",
                         fontWeight: "normal",
                       }}
@@ -438,7 +438,7 @@ const EditShark = () => {
                       justifyContent: "flex-end",
                     }}
                   >
-                    <h2 style={{ fontSize: "30px", color: "whitesmoke" }}>
+                    <h2 style={{ fontSize: "25px", color: "whitesmoke" }}>
                       Family:
                     </h2>
                   </div>
@@ -454,7 +454,7 @@ const EditShark = () => {
                   >
                     <h2
                       style={{
-                        fontSize: "25px",
+                        fontSize: "20px",
                         color: "whitesmoke",
                         fontWeight: "normal",
                       }}
@@ -497,7 +497,7 @@ const EditShark = () => {
                       justifyContent: "flex-end",
                     }}
                   >
-                    <h2 style={{ fontSize: "30px", color: "whitesmoke" }}>
+                    <h2 style={{ fontSize: "25px", color: "whitesmoke" }}>
                       Size:
                     </h2>
                   </div>
@@ -513,7 +513,7 @@ const EditShark = () => {
                   >
                     <h2
                       style={{
-                        fontSize: "25px",
+                        fontSize: "20px",
                         color: "whitesmoke",
                         fontWeight: "normal",
                       }}
@@ -567,7 +567,7 @@ const EditShark = () => {
                       marginLeft: "20px",
                     }}
                   >
-                    <h2 style={{ fontSize: "30px", color: "whitesmoke" }}>
+                    <h2 style={{ fontSize: "25px", color: "whitesmoke" }}>
                       Countries:
                     </h2>
                   </div>
@@ -583,7 +583,7 @@ const EditShark = () => {
                   >
                     <h2
                       style={{
-                        fontSize: "25px",
+                        fontSize: "20px",
                         color: "whitesmoke",
                         fontWeight: "normal",
                       }}
@@ -628,7 +628,7 @@ const EditShark = () => {
                       marginLeft: "20px",
                     }}
                   >
-                    <h2 style={{ fontSize: "30px", color: "whitesmoke" }}>
+                    <h2 style={{ fontSize: "25px", color: "whitesmoke" }}>
                       Depth:
                     </h2>
                   </div>
@@ -644,7 +644,7 @@ const EditShark = () => {
                   >
                     <h2
                       style={{
-                        fontSize: "25px",
+                        fontSize: "20px",
                         color: "whitesmoke",
                         fontWeight: "normal",
                       }}
@@ -687,7 +687,7 @@ const EditShark = () => {
                       marginLeft: "20px",
                     }}
                   >
-                    <h2 style={{ fontSize: "30px", color: "whitesmoke" }}>
+                    <h2 style={{ fontSize: "25px", color: "whitesmoke" }}>
                       Information:
                     </h2>
                   </div>
@@ -703,7 +703,7 @@ const EditShark = () => {
                   >
                     <h2
                       style={{
-                        fontSize: "25px",
+                        fontSize: "20px",
                         color: "whitesmoke",
                         fontWeight: "normal",
                       }}

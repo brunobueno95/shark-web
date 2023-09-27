@@ -13,6 +13,8 @@ import { useNavigate } from "react-router-dom";
 
 import Cookies from "js-cookie";
 
+
+
 const LoginAdmin = () => {
   const [isHovered, setIsHovered] = useState(false);
 
@@ -52,8 +54,9 @@ const LoginAdmin = () => {
     }
   };
 
-  return (
-    <>
+  return (<>
+    <div style={{display:"flex", justifyContent:"center", }}>
+      <div style={{margin:"auto"}}>
       <Link to={"/"}>
         <CgArrowLeftO
           style={{
@@ -66,9 +69,7 @@ const LoginAdmin = () => {
         />
       </Link>
       <div
-        style={{
-          margin: "auto",
-        }}
+        
       >
         <div
           style={{
@@ -194,7 +195,8 @@ const LoginAdmin = () => {
           </button>
         </div>
       </div>
-    </>
+      </div>
+    </div></>
   );
 };
 

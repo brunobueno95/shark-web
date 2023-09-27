@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import Home from "./pages/home/Home.jsx";
-import "./App.css";
+
 import Shark from "./pages/sharkPage/Shark.jsx";
 import LoginAdmin from "./pages/loginAdmin/LoginAdmin.jsx";
 import { AuthProvider } from "./context/AuthContext.jsx";
